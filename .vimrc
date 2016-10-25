@@ -20,7 +20,6 @@ au BufNewFile,BufRead *.c
     set smartindent
     set cindent
 
-    
-this sjg sknfs    
-    
-au BufNewFile *.c 0r ~/.vimtest
+
+au BufNewFile *.c 0r~/.vimctemplate
+

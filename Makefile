@@ -1,6 +1,12 @@
 CPPFLAGS+= -Wall -Wextra -Wpedantic -Wwrite-strings -Wstack-usage=1024 -Wfloat-equal -Waggregate-return -Winline 
 
-#CFLAGS+=std=c11
+CFLAGS+=-std=c11
+
+
+.PHONY: debug
+
+debug: hydracat
+debug: CFLAGS+=-g
 
 #target: dependecies...
 #    rules/
